@@ -1,0 +1,14 @@
+E:\Wuther\Wuther.Bussiness.Service\bin\Debug\netcoreapp3.1\Wuther.Bussiness.Service.deps.json
+E:\Wuther\Wuther.Bussiness.Service\bin\Debug\netcoreapp3.1\Wuther.Bussiness.Service.dll
+E:\Wuther\Wuther.Bussiness.Service\bin\Debug\netcoreapp3.1\Wuther.Bussiness.Service.pdb
+E:\Wuther\Wuther.Bussiness.Service\bin\Debug\netcoreapp3.1\Wuther.Bussiness.Interface.dll
+E:\Wuther\Wuther.Bussiness.Service\bin\Debug\netcoreapp3.1\Wuther.Entities.dll
+E:\Wuther\Wuther.Bussiness.Service\bin\Debug\netcoreapp3.1\Wuther.Entities.pdb
+E:\Wuther\Wuther.Bussiness.Service\bin\Debug\netcoreapp3.1\Wuther.Bussiness.Interface.pdb
+E:\Wuther\Wuther.Bussiness.Service\obj\Debug\netcoreapp3.1\Wuther.Bussiness.Service.csprojAssemblyReference.cache
+E:\Wuther\Wuther.Bussiness.Service\obj\Debug\netcoreapp3.1\Wuther.Bussiness.Service.csproj.CoreCompileInputs.cache
+E:\Wuther\Wuther.Bussiness.Service\obj\Debug\netcoreapp3.1\Wuther.Bussiness.Service.AssemblyInfoInputs.cache
+E:\Wuther\Wuther.Bussiness.Service\obj\Debug\netcoreapp3.1\Wuther.Bussiness.Service.AssemblyInfo.cs
+E:\Wuther\Wuther.Bussiness.Service\obj\Debug\netcoreapp3.1\Wuther.Bussiness.Service.csproj.CopyComplete
+E:\Wuther\Wuther.Bussiness.Service\obj\Debug\netcoreapp3.1\Wuther.Bussiness.Service.dll
+E:\Wuther\Wuther.Bussiness.Service\obj\Debug\netcoreapp3.1\Wuther.Bussiness.Service.pdb
