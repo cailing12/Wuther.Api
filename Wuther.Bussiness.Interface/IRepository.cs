@@ -66,7 +66,7 @@ namespace Wuther.Bussiness.Interface {
         /// 删除数据，即时Commit
         /// </summary>
         /// <param name="t"></param>
-        bool Delete (T t);
+        Task<bool> Delete (T t);
 
         /// <summary>
         /// 根据主键删除数据，即时Commit

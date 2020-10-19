@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wuther.Api", "Wuther.Api\Wuther.Api.csproj", "{CCF6C685-DD0C-42F5-A4A6-F678072307D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wuther.Api", "Wuther.Api\Wuther.Api.csproj", "{CCF6C685-DD0C-42F5-A4A6-F678072307D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wuther.Entities", "Wuther.Entities\Wuther.Entities.csproj", "{5C1A22CF-DA9C-4BA5-936B-ACE595B50452}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wuther.Entities", "Wuther.Entities\Wuther.Entities.csproj", "{5C1A22CF-DA9C-4BA5-936B-ACE595B50452}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wuther.Bussiness.Interface", "Wuther.Bussiness.Interface\Wuther.Bussiness.Interface.csproj", "{7AAB3463-E250-4033-89FC-7F9C7756CBB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wuther.Bussiness.Interface", "Wuther.Bussiness.Interface\Wuther.Bussiness.Interface.csproj", "{7AAB3463-E250-4033-89FC-7F9C7756CBB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wuther.Bussiness.Service", "Wuther.Bussiness.Service\Wuther.Bussiness.Service.csproj", "{B2CCC6F9-D52D-4291-A01C-8BCD59164550}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wuther.Bussiness.Service", "Wuther.Bussiness.Service\Wuther.Bussiness.Service.csproj", "{B2CCC6F9-D52D-4291-A01C-8BCD59164550}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wuther.Util", "Wuther.Util\Wuther.Util.csproj", "{5F107E16-CF05-4CE7-8EC4-706887EE2AEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{CCF6C685-DD0C-42F5-A4A6-F678072307D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -72,5 +71,23 @@ Global
 		{B2CCC6F9-D52D-4291-A01C-8BCD59164550}.Release|x64.Build.0 = Release|Any CPU
 		{B2CCC6F9-D52D-4291-A01C-8BCD59164550}.Release|x86.ActiveCfg = Release|Any CPU
 		{B2CCC6F9-D52D-4291-A01C-8BCD59164550}.Release|x86.Build.0 = Release|Any CPU
+		{5F107E16-CF05-4CE7-8EC4-706887EE2AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F107E16-CF05-4CE7-8EC4-706887EE2AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F107E16-CF05-4CE7-8EC4-706887EE2AEB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5F107E16-CF05-4CE7-8EC4-706887EE2AEB}.Debug|x64.Build.0 = Debug|Any CPU
+		{5F107E16-CF05-4CE7-8EC4-706887EE2AEB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5F107E16-CF05-4CE7-8EC4-706887EE2AEB}.Debug|x86.Build.0 = Debug|Any CPU
+		{5F107E16-CF05-4CE7-8EC4-706887EE2AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F107E16-CF05-4CE7-8EC4-706887EE2AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F107E16-CF05-4CE7-8EC4-706887EE2AEB}.Release|x64.ActiveCfg = Release|Any CPU
+		{5F107E16-CF05-4CE7-8EC4-706887EE2AEB}.Release|x64.Build.0 = Release|Any CPU
+		{5F107E16-CF05-4CE7-8EC4-706887EE2AEB}.Release|x86.ActiveCfg = Release|Any CPU
+		{5F107E16-CF05-4CE7-8EC4-706887EE2AEB}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35806F96-6978-45AA-9038-9F137CE218B7}
 	EndGlobalSection
 EndGlobal

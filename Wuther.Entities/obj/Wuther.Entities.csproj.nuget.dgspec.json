@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Wuther\\Wuther.Entities\\Wuther.Entities.csproj": {}
+    "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {}
   },
   "projects": {
-    "E:\\Wuther\\Wuther.Entities\\Wuther.Entities.csproj": {
+    "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Wuther\\Wuther.Entities\\Wuther.Entities.csproj",
+        "projectUniqueName": "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj",
         "projectName": "Wuther.Entities",
-        "projectPath": "E:\\Wuther\\Wuther.Entities\\Wuther.Entities.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Wuther\\Wuther.Entities\\obj\\",
+        "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj",
+        "packagesPath": "C:\\Users\\caiyi\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Wuther.Api\\Wuther.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\caiyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -73,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

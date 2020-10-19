@@ -1,8 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Wuther.Entities\Wuther.Entities.csproj" />
     <ProjectReference Include="..\Wuther.Bussiness.Interface\Wuther.Bussiness.Interface.csproj" />
+    <ProjectReference Include="..\Wuther.Util\Wuther.Util.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

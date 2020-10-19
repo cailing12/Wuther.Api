@@ -1,41 +1,36 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Internal;
-using Microsoft.Extensions.Logging;
+using Wuther.Bussiness.Interface;
 using Wuther.Entities.Models;
+using Wuther.Util.Models;
 
-namespace Wuther.Api.Controllers {
-    [ApiController]
-    [Route ("[controller]")]
-    public class LoginController : ControllerBase {
-        DbContext context;
-        public LoginController (DbContext context) {
-            this.context = context;
+namespace Wuther.Api.Controllers
+{
+    [Route("api/Login")]
+    public class LoginController : BaseController
+    {
+        IUserRepository _userRepository;
+        public LoginController(IUserRepository userRepository)
+        {
+            _userRepository = userRepository;
         }
 
         [HttpPost]
-        public IActionResult Post (Users user) {
-            var list = context.Set<Users> ().Where (c => c.Account == user.Username && c.Password == user.Password);
-            if (list.Any ()) {
-                return new JsonResult (new { code = 200, msg = "成功", token = user.Username + user.Password });
-            } else {
-                return new JsonResult (new { code = -1, msg = "失败" });
+        public async Task<IActionResult> Post([FromBody] LoginDto user)
+        {
+            var result = await _userRepository.Login(user.Account, user.Password);
+            if(result != null)
+            {
+                var token = _userRepository.GetToken(result);
+                return Ok(new { token,result });
             }
-
-        }
-
-        [HttpGet]
-        public IActionResult Get () {
-            return new JsonResult ("AAAAAAAAA");
+            return NotFound();
         }
 
         [HttpDelete]
-        public IActionResult Delete () {
-            return new JsonResult ("BBBBBB");
+        public IActionResult Delete()
+        {
+            return new JsonResult("BBBBBB");
         }
     }
 }

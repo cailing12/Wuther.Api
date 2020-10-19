@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Storage;
 using MySql.Data.MySqlClient;
 using Wuther.Bussiness.Interface;
@@ -20,9 +21,9 @@ namespace Wuther.Bussiness.Service {
             _context.SaveChanges ();
         }
 
-        public bool Delete (T t) {
-            var result = _context.Set<T> ().Remove (t);
-            Commit ();
+        public async Task<bool> Delete (T t) {
+            _context.Set<T> ().Remove (t);
+            await _context.SaveChangesAsync();
             return true;
         }
 
@@ -66,9 +67,9 @@ namespace Wuther.Bussiness.Service {
         }
 
         public async Task<T> InsertAsync (T t) {
-            await _context.Set<T> ().AddAsync (t);
+             EntityEntry entity = await _context.Set<T> ().AddAsync (t);
             _context.SaveChanges ();
-            return t;
+            return (T)entity.Entity;
         }
 
         public async Task<int> UpdateAsync (T t) {

@@ -13,5 +13,6 @@ namespace Wuther.Entities.Models
         public string Email { get; set; }
         public string Department { get; set; }
         public string Phone { get; set; }
+        public DateTime? WrittenOffTime { get; set; }
     }
 }

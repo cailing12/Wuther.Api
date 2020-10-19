@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Wuther.Entities\Wuther.Entities.csproj" />
+    <ProjectReference Include="..\Wuther.Util\Wuther.Util.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
