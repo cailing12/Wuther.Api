@@ -20,7 +20,19 @@ namespace Wuther.Util.PropertyMapping
                 {"Email",new PropertyMappingValue(new List<string>{"Email" }) },
                 {"Department",new PropertyMappingValue(new List<string>{"Department" }) },
                 {"Phone",new PropertyMappingValue(new List<string>{"Phone" }) },
-                {"Test",new PropertyMappingValue(new List<string>{"Username" }) },
+                {"Test",new PropertyMappingValue(new List<string>{"Username" }) }
+            };
+
+        private readonly Dictionary<string, PropertyMappingValue> _menuPropertyMapping =
+            new Dictionary<string, PropertyMappingValue>()
+            {
+                {"Id",new PropertyMappingValue(new List<string>{"Id" },true) },
+                {"Name",new PropertyMappingValue(new List<string>{"Name" }) },
+                {"PositionDisplay",new PropertyMappingValue(new List<string>{"Position" }) },
+                {"ParentId",new PropertyMappingValue(new List<string>{"ParentId" }) },
+                {"Email",new PropertyMappingValue(new List<string>{"Email" }) },
+                {"Icon",new PropertyMappingValue(new List<string>{"Icon" }) },
+                {"Path",new PropertyMappingValue(new List<string>{"Path" }) }
             };
 
         private readonly IList<IPropertyMapping> _propertyMappings = new List<IPropertyMapping>();
@@ -28,6 +40,7 @@ namespace Wuther.Util.PropertyMapping
         public PropertyMappingService()
         {
             _propertyMappings.Add(new PropertyMapping<UserDto, Users>(_userPropertyMapping));
+            _propertyMappings.Add(new PropertyMapping<MenuDto, Menus>(_menuPropertyMapping));
         }
 
         public Dictionary<string, PropertyMappingValue> GetPropertyMapping<TSource, TDestination>()

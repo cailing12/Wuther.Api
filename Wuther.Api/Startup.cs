@@ -83,6 +83,7 @@ namespace Wuther.Api
             services.AddTransient<DbContext, wutherContext>();
             services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
             services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IMenuRepository, MenuRepository>();
             services.AddTransient<IPropertyMappingService, PropertyMappingService>();
             services.AddTransient<IPropertyCheckerService, PropertyCheckerService>();
         }

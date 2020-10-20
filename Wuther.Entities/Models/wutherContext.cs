@@ -27,17 +27,27 @@ namespace Wuther.Entities.Models
 
                 entity.Property(e => e.Id).HasColumnType("int(11)");
 
+                entity.Property(e => e.Icon)
+                    .HasColumnType("varchar(20)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
                 entity.Property(e => e.Name)
                     .HasColumnType("varchar(20)")
                     .HasCharSet("utf8")
                     .HasCollation("utf8_general_ci");
 
-                entity.Property(e => e.Type)
-                    .HasColumnType("char(1)")
-                    .HasDefaultValueSql("'0'")
-                    .HasComment("0:横栏，1：竖栏")
+                entity.Property(e => e.ParentId).HasColumnType("int(11)");
+
+                entity.Property(e => e.Path)
+                    .HasColumnType("varchar(100)")
                     .HasCharSet("utf8")
                     .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Position)
+                    .HasColumnType("int(1)")
+                    .HasDefaultValueSql("'0'")
+                    .HasComment("0:横栏，1：竖栏");
             });
 
             modelBuilder.Entity<Users>(entity =>
