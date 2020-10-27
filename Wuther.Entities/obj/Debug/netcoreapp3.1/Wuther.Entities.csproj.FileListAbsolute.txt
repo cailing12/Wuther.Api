@@ -22,3 +22,15 @@ D:\Project\Wuther.Api\Wuther.Entities\obj\Debug\netcoreapp3.1\Wuther.Entities.cs
 D:\Project\Wuther.Api\Wuther.Entities\obj\Debug\netcoreapp3.1\Wuther.Entities.dll
 D:\Project\Wuther.Api\Wuther.Entities\obj\Debug\netcoreapp3.1\Wuther.Entities.pdb
 D:\Project\Wuther.Api\Wuther.Entities\obj\Debug\netcoreapp3.1\Wuther.Entities.genruntimeconfig.cache
+G:\Project\wuther\Wuther.Api\Wuther.Entities\bin\Debug\netcoreapp3.1\Wuther.Entities.deps.json
+G:\Project\wuther\Wuther.Api\Wuther.Entities\bin\Debug\netcoreapp3.1\Wuther.Entities.runtimeconfig.json
+G:\Project\wuther\Wuther.Api\Wuther.Entities\bin\Debug\netcoreapp3.1\Wuther.Entities.runtimeconfig.dev.json
+G:\Project\wuther\Wuther.Api\Wuther.Entities\bin\Debug\netcoreapp3.1\Wuther.Entities.dll
+G:\Project\wuther\Wuther.Api\Wuther.Entities\bin\Debug\netcoreapp3.1\Wuther.Entities.pdb
+G:\Project\wuther\Wuther.Api\Wuther.Entities\obj\Debug\netcoreapp3.1\Wuther.Entities.csprojAssemblyReference.cache
+G:\Project\wuther\Wuther.Api\Wuther.Entities\obj\Debug\netcoreapp3.1\Wuther.Entities.csproj.CoreCompileInputs.cache
+G:\Project\wuther\Wuther.Api\Wuther.Entities\obj\Debug\netcoreapp3.1\Wuther.Entities.AssemblyInfoInputs.cache
+G:\Project\wuther\Wuther.Api\Wuther.Entities\obj\Debug\netcoreapp3.1\Wuther.Entities.AssemblyInfo.cs
+G:\Project\wuther\Wuther.Api\Wuther.Entities\obj\Debug\netcoreapp3.1\Wuther.Entities.dll
+G:\Project\wuther\Wuther.Api\Wuther.Entities\obj\Debug\netcoreapp3.1\Wuther.Entities.pdb
+G:\Project\wuther\Wuther.Api\Wuther.Entities\obj\Debug\netcoreapp3.1\Wuther.Entities.genruntimeconfig.cache

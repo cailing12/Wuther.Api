@@ -10,3 +10,15 @@ D:\Project\Wuther.Api\Wuther.Util\obj\Debug\netcoreapp3.1\Wuther.Util.csproj.Cop
 D:\Project\Wuther.Api\Wuther.Util\obj\Debug\netcoreapp3.1\Wuther.Util.dll
 D:\Project\Wuther.Api\Wuther.Util\obj\Debug\netcoreapp3.1\Wuther.Util.pdb
 D:\Project\Wuther.Api\Wuther.Util\obj\Debug\netcoreapp3.1\Wuther.Util.csproj.CoreCompileInputs.cache
+G:\Project\wuther\Wuther.Api\Wuther.Util\bin\Debug\netcoreapp3.1\Wuther.Util.deps.json
+G:\Project\wuther\Wuther.Api\Wuther.Util\bin\Debug\netcoreapp3.1\Wuther.Util.dll
+G:\Project\wuther\Wuther.Api\Wuther.Util\bin\Debug\netcoreapp3.1\Wuther.Util.pdb
+G:\Project\wuther\Wuther.Api\Wuther.Util\bin\Debug\netcoreapp3.1\Wuther.Entities.dll
+G:\Project\wuther\Wuther.Api\Wuther.Util\bin\Debug\netcoreapp3.1\Wuther.Entities.pdb
+G:\Project\wuther\Wuther.Api\Wuther.Util\obj\Debug\netcoreapp3.1\Wuther.Util.csprojAssemblyReference.cache
+G:\Project\wuther\Wuther.Api\Wuther.Util\obj\Debug\netcoreapp3.1\Wuther.Util.csproj.CoreCompileInputs.cache
+G:\Project\wuther\Wuther.Api\Wuther.Util\obj\Debug\netcoreapp3.1\Wuther.Util.AssemblyInfoInputs.cache
+G:\Project\wuther\Wuther.Api\Wuther.Util\obj\Debug\netcoreapp3.1\Wuther.Util.AssemblyInfo.cs
+G:\Project\wuther\Wuther.Api\Wuther.Util\obj\Debug\netcoreapp3.1\Wuther.Util.csproj.CopyComplete
+G:\Project\wuther\Wuther.Api\Wuther.Util\obj\Debug\netcoreapp3.1\Wuther.Util.dll
+G:\Project\wuther\Wuther.Api\Wuther.Util\obj\Debug\netcoreapp3.1\Wuther.Util.pdb

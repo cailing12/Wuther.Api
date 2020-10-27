@@ -1,25 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {}
+    "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {}
   },
   "projects": {
-    "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {
+    "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj",
+        "projectUniqueName": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj",
         "projectName": "Wuther.Entities",
-        "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj",
-        "packagesPath": "C:\\Users\\caiyi\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Wuther.Api\\Wuther.Entities\\obj\\",
+        "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\caiyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -74,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

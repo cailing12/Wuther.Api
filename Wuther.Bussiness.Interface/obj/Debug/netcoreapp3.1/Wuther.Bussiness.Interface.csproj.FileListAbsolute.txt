@@ -24,3 +24,17 @@ D:\Project\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\netcoreapp3.1\Wuther.
 D:\Project\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\netcoreapp3.1\Wuther.Bussiness.Interface.pdb
 D:\Project\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\netcoreapp3.1\Wuther.Util.dll
 D:\Project\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\netcoreapp3.1\Wuther.Util.pdb
+G:\Project\wuther\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\netcoreapp3.1\Wuther.Bussiness.Interface.deps.json
+G:\Project\wuther\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\netcoreapp3.1\Wuther.Bussiness.Interface.dll
+G:\Project\wuther\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\netcoreapp3.1\Wuther.Bussiness.Interface.pdb
+G:\Project\wuther\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\netcoreapp3.1\Wuther.Entities.dll
+G:\Project\wuther\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\netcoreapp3.1\Wuther.Util.dll
+G:\Project\wuther\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\netcoreapp3.1\Wuther.Entities.pdb
+G:\Project\wuther\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\netcoreapp3.1\Wuther.Util.pdb
+G:\Project\wuther\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\netcoreapp3.1\Wuther.Bussiness.Interface.csprojAssemblyReference.cache
+G:\Project\wuther\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\netcoreapp3.1\Wuther.Bussiness.Interface.csproj.CoreCompileInputs.cache
+G:\Project\wuther\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\netcoreapp3.1\Wuther.Bussiness.Interface.AssemblyInfoInputs.cache
+G:\Project\wuther\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\netcoreapp3.1\Wuther.Bussiness.Interface.AssemblyInfo.cs
+G:\Project\wuther\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\netcoreapp3.1\Wuther.Bussiness.Interface.csproj.CopyComplete
+G:\Project\wuther\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\netcoreapp3.1\Wuther.Bussiness.Interface.dll
+G:\Project\wuther\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\netcoreapp3.1\Wuther.Bussiness.Interface.pdb

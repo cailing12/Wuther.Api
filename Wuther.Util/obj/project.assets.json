@@ -753,7 +753,7 @@
       ]
     },
     "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "sha512": "znZGbws7E4BA9jxNZ7FuiIRI3C9hrgatVQSTKhIYZYNOud4M5VfGlTYi6RdYO5sQrebFuF/g9UEV3hOxDMXF6Q==",
       "type": "package",
       "path": "newtonsoft.json/11.0.2",
       "files": [
@@ -1048,25 +1048,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\caiyi\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj",
+      "projectUniqueName": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj",
       "projectName": "Wuther.Util",
-      "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj",
-      "packagesPath": "C:\\Users\\caiyi\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\Wuther.Api\\Wuther.Util\\obj\\",
+      "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Util\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\caiyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -1078,8 +1077,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {
-              "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj"
+            "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {
+              "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj"
             }
           }
         }
@@ -1117,7 +1116,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
