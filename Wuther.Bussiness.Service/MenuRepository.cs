@@ -36,11 +36,10 @@ namespace Wuther.Bussiness.Service
             {
                 queryExpression = queryExpression.Where(c => c.Name.Contains(parameter.Name));
             }
-            queryExpression = queryExpression.Where(c => c.Position == (int)parameter.Type);
+            queryExpression = queryExpression.Where(c => c.Position == (int)parameter.Position);
 
             var mappingDictionary = _propertyMappingService.GetPropertyMapping<MenuDto, Menus>();
             queryExpression = queryExpression.ApplySort(parameter.OrderBy, mappingDictionary);
-
             return await PagedList<Menus>.CreateAsync(queryExpression, parameter.PageNumber, parameter.PageSize);
         }
     }
