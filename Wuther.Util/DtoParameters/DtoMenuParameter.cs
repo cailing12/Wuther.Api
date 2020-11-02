@@ -9,10 +9,10 @@ namespace Wuther.Util.DtoParameters
     {
         private const int MaxPageSize = 20;
         public string Name { get; set; }
-        public MenuPosition Type { get; set; } = MenuPosition.horizontal;
+        public MenuPosition Position { get; set; } = MenuPosition.horizontal;
         public int PageNumber { get; set; } = 1;
 
-        private int _pageSize = 5;
+        private int _pageSize = 10;
         public int PageSize
         {
             get => _pageSize;

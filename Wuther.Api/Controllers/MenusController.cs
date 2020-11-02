@@ -13,6 +13,7 @@ using Wuther.Bussiness.Interface;
 using Wuther.Entities.Models;
 using Wuther.Util.DtoParameters;
 using Wuther.Util.Enums;
+using Wuther.Util.Helper;
 using Wuther.Util.Models;
 using Wuther.Util.PropertyMapping;
 
@@ -92,7 +93,6 @@ namespace Wuther.Api.Controllers
         }
 
         [HttpGet(Name = nameof(GetMenus))]
-        [ResponseCache(Duration = 60)]
         public async Task<IActionResult> GetMenus([FromQuery] DtoMenuParameter parameter)
         {
             if (!_propertyCheckerService.TypeHasProperties<MenuDto>(parameter.Fields))
@@ -116,20 +116,22 @@ namespace Wuther.Api.Controllers
                 Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
             }));
             var menuDtos = _mapper.Map<IList<MenuDto>>(menus);
-            var shapedData = menuDtos.shapeData(parameter.Fields);
+            var menuGenerates = menuDtos.GenerateTree(c => c.Id, u => u.ParentId);
+
+            var shapedData = menuGenerates.shapeData(parameter.Fields);
             var links = CreateLinksForMenus(parameter, menus.HasPrevious, menus.HasNext);
 
-            var shapedMenusWithLinks = shapedData.Select(c =>
-            {
-                var menuDict = c as IDictionary<string, object>;
-                var menusLinks = CreateLinksForMenus((int)menuDict["Id"], null);
-                menuDict.Add("links", menusLinks);
-                return menuDict;
-            });
+            //var shapedMenusWithLinks = shapedData.Select(c =>
+            //{
+            //    var menuDict = c as IDictionary<string, object>;
+            //    var menusLinks = CreateLinksForMenus((int)menuDict["Id"], null);
+            //    menuDict.Add("links", menusLinks);
+            //    return menuDict;
+            //});
 
             var linkedCollectionResource = new
             {
-                value = shapedMenusWithLinks,
+                value = shapedData,
                 links
             };
 
@@ -178,7 +180,7 @@ namespace Wuther.Api.Controllers
                         pageNumber = parameters.PageNumber - 1,
                         pageSize = parameters.PageSize,
                         name = parameters.Name,
-                        type = parameters.Type,
+                        position = parameters.Position,
                         orderBy = parameters.OrderBy
                     });
 
@@ -190,7 +192,7 @@ namespace Wuther.Api.Controllers
                         pageNumber = parameters.PageNumber + 1,
                         pageSize = parameters.PageSize,
                         name = parameters.Name,
-                        type = parameters.Type,
+                        position = parameters.Position,
                         orderBy = parameters.OrderBy
                     });
 
@@ -202,7 +204,7 @@ namespace Wuther.Api.Controllers
                         pageNumber = parameters.PageNumber,
                         pageSize = parameters.PageSize,
                         name = parameters.Name,
-                        type = parameters.Type,
+                        position = parameters.Position,
                         orderBy = parameters.OrderBy
                     });
             }
