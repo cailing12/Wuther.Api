@@ -1,43 +1,46 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Project\\wuther\\Wuther.Api\\Wuther.Api\\Wuther.Api.csproj": {}
+    "D:\\Project\\Wuther.Api\\Wuther.Api\\Wuther.Api.csproj": {}
   },
   "projects": {
-    "G:\\Project\\wuther\\Wuther.Api\\Wuther.Api\\Wuther.Api.csproj": {
+    "D:\\Project\\Wuther.Api\\Wuther.Api\\Wuther.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Api\\Wuther.Api.csproj",
+        "projectUniqueName": "D:\\Project\\Wuther.Api\\Wuther.Api\\Wuther.Api.csproj",
         "projectName": "Wuther.Api",
-        "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Api\\Wuther.Api.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Api\\obj\\",
+        "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Api\\Wuther.Api.csproj",
+        "packagesPath": "C:\\Users\\caiyi\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Wuther.Api\\Wuther.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\caiyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "G:\\Project\\wuther\\Wuther.Api\\Wuther.Bussiness.Interface\\Wuther.Bussiness.Interface.csproj": {
-                "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Bussiness.Interface\\Wuther.Bussiness.Interface.csproj"
+              "D:\\Project\\Wuther.Api\\Wuther.Bussiness.Interface\\Wuther.Bussiness.Interface.csproj": {
+                "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Bussiness.Interface\\Wuther.Bussiness.Interface.csproj"
               },
-              "G:\\Project\\wuther\\Wuther.Api\\Wuther.Bussiness.Service\\Wuther.Bussiness.Service.csproj": {
-                "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Bussiness.Service\\Wuther.Bussiness.Service.csproj"
+              "D:\\Project\\Wuther.Api\\Wuther.Bussiness.Service\\Wuther.Bussiness.Service.csproj": {
+                "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Bussiness.Service\\Wuther.Bussiness.Service.csproj"
               },
-              "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {
-                "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj"
+              "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {
+                "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj"
               }
             }
           }
@@ -49,7 +52,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -65,21 +69,17 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.10, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[3.1.3, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[3.1.10, )"
             }
           },
           "imports": [
@@ -100,41 +100,44 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\Project\\wuther\\Wuther.Api\\Wuther.Bussiness.Interface\\Wuther.Bussiness.Interface.csproj": {
+    "D:\\Project\\Wuther.Api\\Wuther.Bussiness.Interface\\Wuther.Bussiness.Interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Bussiness.Interface\\Wuther.Bussiness.Interface.csproj",
+        "projectUniqueName": "D:\\Project\\Wuther.Api\\Wuther.Bussiness.Interface\\Wuther.Bussiness.Interface.csproj",
         "projectName": "Wuther.Bussiness.Interface",
-        "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Bussiness.Interface\\Wuther.Bussiness.Interface.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Bussiness.Interface\\obj\\",
+        "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Bussiness.Interface\\Wuther.Bussiness.Interface.csproj",
+        "packagesPath": "C:\\Users\\caiyi\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Wuther.Api\\Wuther.Bussiness.Interface\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\caiyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {
-                "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj"
+              "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {
+                "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj"
               },
-              "G:\\Project\\wuther\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj": {
-                "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj"
+              "D:\\Project\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj": {
+                "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj"
               }
             }
           }
@@ -146,7 +149,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "imports": [
             "net461",
             "net462",
@@ -162,44 +166,47 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\Project\\wuther\\Wuther.Api\\Wuther.Bussiness.Service\\Wuther.Bussiness.Service.csproj": {
+    "D:\\Project\\Wuther.Api\\Wuther.Bussiness.Service\\Wuther.Bussiness.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Bussiness.Service\\Wuther.Bussiness.Service.csproj",
+        "projectUniqueName": "D:\\Project\\Wuther.Api\\Wuther.Bussiness.Service\\Wuther.Bussiness.Service.csproj",
         "projectName": "Wuther.Bussiness.Service",
-        "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Bussiness.Service\\Wuther.Bussiness.Service.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Bussiness.Service\\obj\\",
+        "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Bussiness.Service\\Wuther.Bussiness.Service.csproj",
+        "packagesPath": "C:\\Users\\caiyi\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Wuther.Api\\Wuther.Bussiness.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\caiyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "G:\\Project\\wuther\\Wuther.Api\\Wuther.Bussiness.Interface\\Wuther.Bussiness.Interface.csproj": {
-                "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Bussiness.Interface\\Wuther.Bussiness.Interface.csproj"
+              "D:\\Project\\Wuther.Api\\Wuther.Bussiness.Interface\\Wuther.Bussiness.Interface.csproj": {
+                "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Bussiness.Interface\\Wuther.Bussiness.Interface.csproj"
               },
-              "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {
-                "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj"
+              "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {
+                "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj"
               },
-              "G:\\Project\\wuther\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj": {
-                "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj"
+              "D:\\Project\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj": {
+                "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj"
               }
             }
           }
@@ -211,7 +218,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "System.Linq.Dynamic.Core": {
               "target": "Package",
@@ -233,35 +241,38 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {
+    "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj",
+        "projectUniqueName": "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj",
         "projectName": "Wuther.Entities",
-        "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\obj\\",
+        "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj",
+        "packagesPath": "C:\\Users\\caiyi\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Wuther.Api\\Wuther.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\caiyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -272,23 +283,24 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.10, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[3.2.4, )"
             }
           },
           "imports": [
@@ -306,38 +318,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "G:\\Project\\wuther\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj": {
+    "D:\\Project\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj",
+        "projectUniqueName": "D:\\Project\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj",
         "projectName": "Wuther.Util",
-        "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Util\\obj\\",
+        "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Util\\Wuther.Util.csproj",
+        "packagesPath": "C:\\Users\\caiyi\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Wuther.Api\\Wuther.Util\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\caiyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {
-                "projectPath": "G:\\Project\\wuther\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj"
+              "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj": {
+                "projectPath": "D:\\Project\\Wuther.Api\\Wuther.Entities\\Wuther.Entities.csproj"
               }
             }
           }
@@ -349,7 +364,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -375,7 +391,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

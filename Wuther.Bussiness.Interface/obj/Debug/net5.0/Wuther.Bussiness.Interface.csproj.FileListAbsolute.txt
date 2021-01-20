@@ -1,0 +1,17 @@
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\net5.0\Wuther.Bussiness.Interface.deps.json
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\net5.0\Wuther.Bussiness.Interface.dll
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\net5.0\ref\Wuther.Bussiness.Interface.dll
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\net5.0\Wuther.Bussiness.Interface.pdb
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\net5.0\Wuther.Entities.dll
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\net5.0\Wuther.Util.dll
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\net5.0\Wuther.Entities.pdb
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\bin\Debug\net5.0\Wuther.Util.pdb
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\net5.0\Wuther.Bussiness.Interface.csprojAssemblyReference.cache
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\net5.0\Wuther.Bussiness.Interface.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\net5.0\Wuther.Bussiness.Interface.AssemblyInfoInputs.cache
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\net5.0\Wuther.Bussiness.Interface.AssemblyInfo.cs
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\net5.0\Wuther.Bussiness.Interface.csproj.CoreCompileInputs.cache
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\net5.0\Wuther.Bussiness.Interface.csproj.CopyComplete
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\net5.0\Wuther.Bussiness.Interface.dll
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\net5.0\ref\Wuther.Bussiness.Interface.dll
+D:\Project\Wuther.Api\Wuther.Bussiness.Interface\obj\Debug\net5.0\Wuther.Bussiness.Interface.pdb

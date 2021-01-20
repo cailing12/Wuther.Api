@@ -1,0 +1,15 @@
+D:\Project\Wuther.Api\Wuther.Entities\bin\Debug\net5.0\Wuther.Entities.deps.json
+D:\Project\Wuther.Api\Wuther.Entities\bin\Debug\net5.0\Wuther.Entities.runtimeconfig.json
+D:\Project\Wuther.Api\Wuther.Entities\bin\Debug\net5.0\Wuther.Entities.runtimeconfig.dev.json
+D:\Project\Wuther.Api\Wuther.Entities\bin\Debug\net5.0\Wuther.Entities.dll
+D:\Project\Wuther.Api\Wuther.Entities\bin\Debug\net5.0\ref\Wuther.Entities.dll
+D:\Project\Wuther.Api\Wuther.Entities\bin\Debug\net5.0\Wuther.Entities.pdb
+D:\Project\Wuther.Api\Wuther.Entities\obj\Debug\net5.0\Wuther.Entities.csprojAssemblyReference.cache
+D:\Project\Wuther.Api\Wuther.Entities\obj\Debug\net5.0\Wuther.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Wuther.Api\Wuther.Entities\obj\Debug\net5.0\Wuther.Entities.AssemblyInfoInputs.cache
+D:\Project\Wuther.Api\Wuther.Entities\obj\Debug\net5.0\Wuther.Entities.AssemblyInfo.cs
+D:\Project\Wuther.Api\Wuther.Entities\obj\Debug\net5.0\Wuther.Entities.csproj.CoreCompileInputs.cache
+D:\Project\Wuther.Api\Wuther.Entities\obj\Debug\net5.0\Wuther.Entities.dll
+D:\Project\Wuther.Api\Wuther.Entities\obj\Debug\net5.0\ref\Wuther.Entities.dll
+D:\Project\Wuther.Api\Wuther.Entities\obj\Debug\net5.0\Wuther.Entities.pdb
+D:\Project\Wuther.Api\Wuther.Entities\obj\Debug\net5.0\Wuther.Entities.genruntimeconfig.cache
