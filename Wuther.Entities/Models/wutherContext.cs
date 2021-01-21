@@ -15,12 +15,45 @@ namespace Wuther.Entities.Models
         {
         }
 
+        public virtual DbSet<Blogs> Blogs { get; set; }
         public virtual DbSet<Menus> Menus { get; set; }
         public virtual DbSet<Users> Users { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Blogs>(entity =>
+            {
+                entity.ToTable("blogs");
+
+                entity.Property(e => e.Id).HasColumnType("int(11)");
+
+                entity.Property(e => e.Abstract)
+                    .HasColumnType("varchar(300)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Comment).HasColumnType("int(11)");
+
+                entity.Property(e => e.CreateTime).HasColumnType("datetime");
+
+                entity.Property(e => e.Like).HasColumnType("int(11)");
+
+                entity.Property(e => e.MenuId).HasColumnType("int(11)");
+
+                entity.Property(e => e.ModifyTime).HasColumnType("datetime");
+
+                entity.Property(e => e.Title)
+                    .IsRequired()
+                    .HasColumnType("varchar(100)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
+                entity.Property(e => e.Trend).HasColumnType("int(11)");
+
+                entity.Property(e => e.UserId).HasColumnType("int(11)");
+            });
+
             modelBuilder.Entity<Menus>(entity =>
             {
                 entity.ToTable("menus");

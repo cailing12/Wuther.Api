@@ -34,6 +34,19 @@ namespace Wuther.Util.PropertyMapping
                 {"Icon",new PropertyMappingValue(new List<string>{"Icon" }) },
                 {"Path",new PropertyMappingValue(new List<string>{"Path" }) }
             };
+        private readonly Dictionary<string, PropertyMappingValue> _blogPropertyMapping =
+            new Dictionary<string, PropertyMappingValue>()
+            {
+                {"Id",new PropertyMappingValue(new List<string>{"Id" },true) },
+                {"Title",new PropertyMappingValue(new List<string>{"Title" }) },
+                {"Abstract",new PropertyMappingValue(new List<string>{"Abstract" }) },
+                {"UserId",new PropertyMappingValue(new List<string>{"UserId" }) },
+                {"MenuId",new PropertyMappingValue(new List<string>{"MenuId" }) },
+                {"Like",new PropertyMappingValue(new List<string>{"Like" }) },
+                {"Comment",new PropertyMappingValue(new List<string>{"Comment" }) },
+                {"Trend",new PropertyMappingValue(new List<string>{"Trend" }) },
+                {"CreateTime",new PropertyMappingValue(new List<string>{"CreateTime" }) }
+            };
 
         private readonly IList<IPropertyMapping> _propertyMappings = new List<IPropertyMapping>();
 
@@ -41,6 +54,7 @@ namespace Wuther.Util.PropertyMapping
         {
             _propertyMappings.Add(new PropertyMapping<UserDto, Users>(_userPropertyMapping));
             _propertyMappings.Add(new PropertyMapping<MenuDto, Menus>(_menuPropertyMapping));
+            _propertyMappings.Add(new PropertyMapping<BlogDto, Blogs>(_blogPropertyMapping));
         }
 
         public Dictionary<string, PropertyMappingValue> GetPropertyMapping<TSource, TDestination>()
