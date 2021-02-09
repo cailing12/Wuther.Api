@@ -20,6 +20,8 @@ namespace Wuther.Util.Profiles
             CreateMap<Blogs, BlogFullDto>();
 
             CreateMap<BlogFullDto, Blogs>();
+
+            CreateMap<BlogAddDto, Blogs>();
         }
     }
 }

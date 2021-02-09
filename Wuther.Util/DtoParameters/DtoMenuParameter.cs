@@ -21,6 +21,6 @@ namespace Wuther.Util.DtoParameters
 
         public string Fields { get; set; }
 
-        public string OrderBy { get; set; } = "Name";
+        public string OrderBy { get; set; } = "Seqno";
     }
 }

@@ -11,8 +11,6 @@ namespace Wuther.Util.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public string Abstract { get; set; }
-        public int UserId { get; set; }
-        public int MenuId { get; set; }
         public int? Like { get; set; }
         public int? Comment { get; set; }
         public int? Trend { get; set; }

@@ -32,7 +32,8 @@ namespace Wuther.Util.PropertyMapping
                 {"ParentId",new PropertyMappingValue(new List<string>{"ParentId" }) },
                 {"Email",new PropertyMappingValue(new List<string>{"Email" }) },
                 {"Icon",new PropertyMappingValue(new List<string>{"Icon" }) },
-                {"Path",new PropertyMappingValue(new List<string>{"Path" }) }
+                {"Path",new PropertyMappingValue(new List<string>{"Path" }) },
+                {"Seqno",new PropertyMappingValue(new List<string>{"Seqno" }) }
             };
         private readonly Dictionary<string, PropertyMappingValue> _blogPropertyMapping =
             new Dictionary<string, PropertyMappingValue>()

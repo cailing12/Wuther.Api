@@ -49,6 +49,7 @@ namespace Wuther.Api
             .AddNewtonsoftJson(setup =>
             {
                 setup.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+                setup.SerializerSettings.DateFormatString = "yyyy-MM-dd HH:mm:ss";
             })
             .AddXmlDataContractSerializerFormatters()
             .ConfigureApiBehaviorOptions(setup =>

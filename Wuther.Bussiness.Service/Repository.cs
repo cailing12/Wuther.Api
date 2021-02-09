@@ -60,6 +60,13 @@ namespace Wuther.Bussiness.Service {
             return await _context.Set<T> ().Where (exp).ToListAsync ();
         }
 
+        public async Task<T> EagerLoadAsync<K>(T t, Expression<Func<T, K>> propertyExpression) where K : class
+        {
+            await _context.Entry(t).Reference(c => propertyExpression)
+           .LoadAsync();
+            return t;
+        }
+
         public IQueryable<T> GetTableData (int pageindex, int pagesize, out int count, Expression<Func<T, bool>> exp = null, Expression<Func<T, bool>> orderby = null) {
             var list = _context.Set<T> ().Where (exp);
             count = list.Count ();

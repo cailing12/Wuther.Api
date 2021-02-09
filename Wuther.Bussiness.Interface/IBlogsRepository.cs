@@ -8,6 +8,6 @@ namespace Wuther.Bussiness.Interface
     public interface IBlogsRepository : IRepository<Blogs>
     {
         Task<Blogs> GetBlogAsync(int id);
-        Task<PagedList<Blogs>> GetBlogsAsync(DtoBlogParameter parameter);
+        Task<PagedList<Blogs>> GetBlogsAsync(DtoBlogParameter parameter,bool eager);
     }
 }

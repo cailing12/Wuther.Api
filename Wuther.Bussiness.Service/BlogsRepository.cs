@@ -24,12 +24,29 @@ namespace Wuther.Bussiness.Service
         }
         public async Task<Blogs> GetBlogAsync(int id)
         {
-            return await _context.FindAsync<Blogs>(id);
+            var blog =  _context.Find<Blogs>(id);
+            await _context.Entry(blog).Reference(c => c.Menu)
+           .LoadAsync();
+            await _context.Entry(blog).Reference(c => c.User)
+          .LoadAsync();
+            //await EagerLoadAsync(blog, c => c.Menu);
+            //await EagerLoadAsync<Users>(blog, d => d.User);
+            return blog;
         }
 
-        public async Task<PagedList<Blogs>> GetBlogsAsync(DtoBlogParameter parameter)
+        public async Task<PagedList<Blogs>> GetBlogsAsync(DtoBlogParameter parameter,bool eager)
         {
-            var queryExpression = _context.Set<Blogs>() as IQueryable<Blogs>;
+            IQueryable<Blogs> queryExpression;
+            //是否预加载
+            if (eager)
+            {
+                queryExpression = _context.Set<Blogs>().Include(c => c.Menu).Include(d => d.User);
+            }
+            else
+            {
+                queryExpression = _context.Set<Blogs>();
+            }
+            
             if (!string.IsNullOrWhiteSpace(parameter.Title))
             {
                 queryExpression = queryExpression.Where(c => c.Title.Contains(parameter.Title));

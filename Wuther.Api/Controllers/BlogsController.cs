@@ -1,10 +1,15 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Net.Http.Headers;
+using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Wuther.Api.ActionConstraints;
 using Wuther.Bussiness.Interface;
 using Wuther.Entities.Models;
 using Wuther.Util.DtoParameters;
@@ -16,7 +21,7 @@ using Wuther.Util.PropertyMapping;
 namespace Wuther.Api.Controllers
 {
     [Route("api/[controller]")]
-    public class BlogsController: BaseController
+    public class BlogsController : BaseController
     {
         private readonly IMapper _mapper;
         private readonly IBlogsRepository _blogsRepository;
@@ -56,11 +61,7 @@ namespace Wuther.Api.Controllers
             {
                 return BadRequest();
             }
-            var blog = await _blogsRepository.GetBlogAsync(blogId);
-            if (blog == null)
-            {
-                return NotFound();
-            }
+            
 
             var includeLinks = parsedMediaType.SubTypeWithoutSuffix.
                 EndsWith("hateoas", System.StringComparison.InvariantCultureIgnoreCase);
@@ -75,17 +76,12 @@ namespace Wuther.Api.Controllers
                 : parsedMediaType.SubTypeWithoutSuffix;
             if (primaryMediaType == "vnd.wuther.blogs.full")
             {
+                var blog = await _blogsRepository.GetBlogAsync(blogId);
+                if (blog == null)
+                {
+                    return NotFound();
+                }
                 var full = _mapper.Map<Blogs, BlogFullDto>(blog);
-                var user = await _userRepository.FindAsync(full.UserId);
-                if(user!= null)
-                {
-                    full.UserName = user.Username;
-                }
-                var menu = await _menuRepository.FindAsync(full.MenuId);
-                if(menu != null)
-                {
-                    full.MenuName = menu.Name;
-                }
                 var fullDic = full.ShapeData(fields) as IDictionary<string, object>;
                 if (includeLinks)
                 {
@@ -93,20 +89,37 @@ namespace Wuther.Api.Controllers
                 }
                 return Ok(full);
             }
-
-            var friendly = _mapper.Map<BlogDto>(blog).ShapeData(fields) as IDictionary<string, object>;
-
-            if (includeLinks)
+            else
             {
-                friendly.Add("links", myLinks);
-            }
+                var blog = await _blogsRepository.FindAsync(blogId);
+                if (blog == null)
+                {
+                    return NotFound();
+                }
+                var friendly = _mapper.Map<BlogDto>(blog).ShapeData(fields) as IDictionary<string, object>;
 
-            return Ok(friendly);
+                if (includeLinks)
+                {
+                    friendly.Add("links", myLinks);
+                }
+
+                return Ok(friendly);
+            }
         }
 
+        [Produces("application/json",
+            "application/vnd.wuther.hateoas+json",
+            "application/vnd.wuther.blogs.friendly+json",
+            "application/vnd.wuther.blogs.friendly.hateoas+json",
+            "application/vnd.wuther.blogs.full+json",
+            "application/vnd.wuther.blogs.full.hateoas+json")]
         [HttpGet(Name = nameof(GetBlogs))]
-        public async Task<IActionResult> GetBlogs([FromQuery] DtoBlogParameter parameter)
+        public async Task<IActionResult> GetBlogs([FromQuery] DtoBlogParameter parameter, [FromHeader(Name = "Accept")] string mediaType)
         {
+            if (!MediaTypeHeaderValue.TryParse(mediaType, out MediaTypeHeaderValue parsedMediaType))
+            {
+                return BadRequest();
+            }
             if (!_propertyCheckerService.TypeHasProperties<BlogDto>(parameter.Fields))
             {
                 return BadRequest();
@@ -115,7 +128,41 @@ namespace Wuther.Api.Controllers
             {
                 return BadRequest();
             }
-            var blogs = await _blogsRepository.GetBlogsAsync(parameter);
+            var includeLinks = parsedMediaType.SubTypeWithoutSuffix.
+                EndsWith("hateoas", System.StringComparison.InvariantCultureIgnoreCase);
+            IEnumerable<LinkDto> myLinks = new List<LinkDto>();
+            var primaryMediaType = includeLinks
+                ? parsedMediaType.SubTypeWithoutSuffix.Substring(0, parsedMediaType.SubTypeWithoutSuffix.Length - 8)
+                : parsedMediaType.SubTypeWithoutSuffix;
+
+
+            if (primaryMediaType == "vnd.wuther.blogs.full")
+            {
+                var fullBlogs = await _blogsRepository.GetBlogsAsync(parameter, true);
+                var fullPaginationMetadata = new
+                {
+                    totalCount = fullBlogs.TotalCount,
+                    pageSize = fullBlogs.PageSize,
+                    currentPage = fullBlogs.CurrentPage,
+                    totalPages = fullBlogs.TotalPages,
+                };
+                Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(fullPaginationMetadata, new JsonSerializerOptions
+                {
+                    Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+                }));
+                var blogFullDtos = _mapper.Map<IList<BlogFullDto>>(fullBlogs);
+                var shapedFullData = blogFullDtos.shapeData(parameter.Fields);
+                var fullLinks = CreateLinksForMenus(parameter, fullBlogs.HasPrevious, fullBlogs.HasNext);
+                var fullLinkedCollectionResource = new
+                {
+                    value = shapedFullData,
+                    fullLinks
+                };
+
+                return Ok(fullLinkedCollectionResource);
+
+            }
+            var blogs = await _blogsRepository.GetBlogsAsync(parameter, false);
             var paginationMetadata = new
             {
                 totalCount = blogs.TotalCount,
@@ -127,8 +174,8 @@ namespace Wuther.Api.Controllers
             {
                 Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
             }));
-            var blogDtos = _mapper.Map<IList<BlogDto>>(blogs);
 
+            var blogDtos = _mapper.Map<IList<BlogDto>>(blogs);
             var shapedData = blogDtos.shapeData(parameter.Fields);
             var links = CreateLinksForMenus(parameter, blogs.HasPrevious, blogs.HasNext);
 
@@ -147,6 +194,34 @@ namespace Wuther.Api.Controllers
             };
 
             return Ok(linkedCollectionResource);
+        }
+
+        [HttpPost(Name = nameof(CreateBlog))]
+        [RequestHeaderMatchesMediaType("Content-Type", "application/json", "application/vnd.wuther.blogforcreation+json")]
+        [Consumes("application/json", "application/vnd.wuther.blogforcreation+json")]
+        public async Task<ActionResult<Blogs>> CreateBlog(BlogAddDto blog)
+        {
+            //创建html文件
+            //1.设置文件名
+            var fileName = DateTimeHelper.GetTimestamp(DateTime.Now);
+            //创建文件
+            var htmlHead = System.IO.File.ReadAllText("../Wuther.Api/Resource/bloghead.txt");
+            var htmlfoot = System.IO.File.ReadAllText("../Wuther.Api/Resource/blogfoot.txt");
+            var htmlContent = $"{htmlHead}{blog.Content}{htmlfoot}";
+
+            var buffer = Encoding.UTF8.GetBytes(htmlContent);
+            FileHeper.CreateFile($"D:\\Project3\\wuther.ui\\src\\admin\\p\\{fileName}.html", buffer);
+
+            var entity = _mapper.Map<Blogs>(blog);
+            entity.CreateTime = DateTime.Now;
+            entity.Path = $"\\admin\\p\\{fileName}.html";
+
+            var blogAdd = await _blogsRepository.InsertAsync(entity);
+            var returnDto = _mapper.Map<BlogDto>(blogAdd);
+            var links = CreateLinksForBlogs(returnDto.Id, null);
+            var linkedDict = returnDto.ShapeData(null) as IDictionary<string, object>;
+            linkedDict.Add("links", links);
+            return CreatedAtRoute(nameof(GetBlog), new { menuId = linkedDict["Id"] }, linkedDict);
         }
 
         private IEnumerable<LinkDto> CreateLinksForBlogs(int menuId, string fields)
@@ -237,5 +312,7 @@ namespace Wuther.Api.Controllers
                     });
             }
         }
+
+
     }
 }

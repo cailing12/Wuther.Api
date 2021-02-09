@@ -17,6 +17,11 @@ namespace Wuther.Bussiness.Interface {
         Task<T> FindAsync (object id);
 
         /// <summary>
+        /// 预加载外键对象
+        /// </summary>
+        Task<T> EagerLoadAsync<K>(T t, Expression<Func<T, K>> propertyExpression) where K : class;
+
+        /// <summary>
         /// 根据过滤条件，获取记录
         /// </summary>
         /// <param name="exp">The exp.</param>

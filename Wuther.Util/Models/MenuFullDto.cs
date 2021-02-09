@@ -13,5 +13,6 @@ namespace Wuther.Util.Models
         public int? ParentId { get; set; }
         public string Icon { get; set; }
         public string Path { get; set; }
+        public int Seqno { get; set; }
     }
 }

@@ -26,6 +26,12 @@ namespace Wuther.Entities.Models
             {
                 entity.ToTable("blogs");
 
+                entity.HasIndex(e => e.MenuId)
+                    .HasName("blog_menu");
+
+                entity.HasIndex(e => e.UserId)
+                    .HasName("blog_user");
+
                 entity.Property(e => e.Id).HasColumnType("int(11)");
 
                 entity.Property(e => e.Abstract)
@@ -43,6 +49,11 @@ namespace Wuther.Entities.Models
 
                 entity.Property(e => e.ModifyTime).HasColumnType("datetime");
 
+                entity.Property(e => e.Path)
+                    .HasColumnType("varchar(100)")
+                    .HasCharSet("utf8")
+                    .HasCollation("utf8_general_ci");
+
                 entity.Property(e => e.Title)
                     .IsRequired()
                     .HasColumnType("varchar(100)")
@@ -52,6 +63,18 @@ namespace Wuther.Entities.Models
                 entity.Property(e => e.Trend).HasColumnType("int(11)");
 
                 entity.Property(e => e.UserId).HasColumnType("int(11)");
+
+                entity.HasOne(d => d.Menu)
+                    .WithMany(p => p.Blogs)
+                    .HasForeignKey(d => d.MenuId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("blog_menu");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.Blogs)
+                    .HasForeignKey(d => d.UserId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("blog_user");
             });
 
             modelBuilder.Entity<Menus>(entity =>
@@ -81,6 +104,8 @@ namespace Wuther.Entities.Models
                     .HasColumnType("int(1)")
                     .HasDefaultValueSql("'0'")
                     .HasComment("0:横栏，1：竖栏");
+
+                entity.Property(e => e.Seqno).HasColumnType("int(11)");
             });
 
             modelBuilder.Entity<Users>(entity =>
