@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Wuther.Util.Helper
 {
-    public static class FileHeper
+    public static class FileHelper
     {
         #region 检测指定目录是否存在  
         /// <summary>  

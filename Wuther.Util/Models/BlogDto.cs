@@ -15,5 +15,6 @@ namespace Wuther.Util.Models
         public int? Comment { get; set; }
         public int? Trend { get; set; }
         public DateTime CreateTime { get; set; }
+        public string Path { get; set; }
     }
 }

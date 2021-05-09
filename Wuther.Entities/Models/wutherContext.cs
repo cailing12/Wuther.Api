@@ -43,6 +43,10 @@ namespace Wuther.Entities.Models
 
                 entity.Property(e => e.CreateTime).HasColumnType("datetime");
 
+                entity.Property(e => e.IsPublic)
+                    .HasColumnType("int(1)")
+                    .HasComment("是否公开：0是，1否");
+
                 entity.Property(e => e.Like).HasColumnType("int(11)");
 
                 entity.Property(e => e.MenuId).HasColumnType("int(11)");

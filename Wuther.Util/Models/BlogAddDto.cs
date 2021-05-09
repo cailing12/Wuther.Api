@@ -12,5 +12,6 @@ namespace Wuther.Util.Models
         public string Content { get; set; }
         public int UserId { get; set; }
         public int MenuId { get; set; }
+        public int IsPublic { get; set; }
     }
 }

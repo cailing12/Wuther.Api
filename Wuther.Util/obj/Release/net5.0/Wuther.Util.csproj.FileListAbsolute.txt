@@ -1,0 +1,15 @@
+D:\Project\Wuther.Api\Wuther.Util\bin\Release\net5.0\Wuther.Util.deps.json
+D:\Project\Wuther.Api\Wuther.Util\bin\Release\net5.0\Wuther.Util.dll
+D:\Project\Wuther.Api\Wuther.Util\bin\Release\net5.0\ref\Wuther.Util.dll
+D:\Project\Wuther.Api\Wuther.Util\bin\Release\net5.0\Wuther.Util.pdb
+D:\Project\Wuther.Api\Wuther.Util\bin\Release\net5.0\Wuther.Entities.dll
+D:\Project\Wuther.Api\Wuther.Util\bin\Release\net5.0\Wuther.Entities.pdb
+D:\Project\Wuther.Api\Wuther.Util\obj\Release\net5.0\Wuther.Util.csprojAssemblyReference.cache
+D:\Project\Wuther.Api\Wuther.Util\obj\Release\net5.0\Wuther.Util.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Wuther.Api\Wuther.Util\obj\Release\net5.0\Wuther.Util.AssemblyInfoInputs.cache
+D:\Project\Wuther.Api\Wuther.Util\obj\Release\net5.0\Wuther.Util.AssemblyInfo.cs
+D:\Project\Wuther.Api\Wuther.Util\obj\Release\net5.0\Wuther.Util.csproj.CoreCompileInputs.cache
+D:\Project\Wuther.Api\Wuther.Util\obj\Release\net5.0\Wuther.Util.csproj.CopyComplete
+D:\Project\Wuther.Api\Wuther.Util\obj\Release\net5.0\Wuther.Util.dll
+D:\Project\Wuther.Api\Wuther.Util\obj\Release\net5.0\ref\Wuther.Util.dll
+D:\Project\Wuther.Api\Wuther.Util\obj\Release\net5.0\Wuther.Util.pdb

@@ -210,12 +210,20 @@ namespace Wuther.Api.Controllers
             var htmlContent = $"{htmlHead}{blog.Content}{htmlfoot}";
 
             var buffer = Encoding.UTF8.GetBytes(htmlContent);
-            FileHeper.CreateFile($"D:\\Project3\\wuther.ui\\src\\admin\\p\\{fileName}.html", buffer);
+            FileHelper.CreateFile($"D:\\Project4\\wuther.ui.vue3\\public\\admin\\{fileName}.html", buffer);
 
             var entity = _mapper.Map<Blogs>(blog);
             entity.CreateTime = DateTime.Now;
-            entity.Path = $"\\admin\\p\\{fileName}.html";
-
+            entity.Path = $"\\admin\\{fileName}.html";
+            var contentStr = StringHelper.RemoveBlogContentSpecialChar(blog.Content);
+            if(contentStr.Length > 200)
+            {
+                entity.Abstract = contentStr.Substring(0, 200);
+            }
+            else
+            {
+                entity.Abstract = contentStr.Substring(0, contentStr.Length);
+            }
             var blogAdd = await _blogsRepository.InsertAsync(entity);
             var returnDto = _mapper.Map<BlogDto>(blogAdd);
             var links = CreateLinksForBlogs(returnDto.Id, null);

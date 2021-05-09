@@ -16,6 +16,7 @@ namespace Wuther.Entities.Models
         public DateTime CreateTime { get; set; }
         public DateTime? ModifyTime { get; set; }
         public string Path { get; set; }
+        public int IsPublic { get; set; }
 
         public virtual Menus Menu { get; set; }
         public virtual Users User { get; set; }
